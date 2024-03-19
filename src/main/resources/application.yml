@@ -1,0 +1,16 @@
+server:
+  port: 8090
+spring:
+  application:
+    name: resource-server
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: http://localhost:9001
+  logging:
+    level:
+      org.springframework.boot: error
+      org.springframework.security: debug
+      org.springframework.security.web: debug
+      org.apache.catalina: error
